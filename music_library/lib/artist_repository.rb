@@ -11,7 +11,7 @@ class ArtistRepository
 
     artists = [] #an empty array that should contain all our data
     
-    result_set.each.do |record|
+    result_set.each do |record|
       #result_set gives an array of hashes, so for each record i.e. HASH in the result set 
       #we want to create a new object in the artist model class i.e INFLATING the object
       #and then we assign what the different properties of that object to the different values in the HASH
@@ -27,3 +27,4 @@ class ArtistRepository
 
     return artists
   end
+end
