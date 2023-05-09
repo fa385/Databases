@@ -9,7 +9,7 @@ class ArtistRepository
     result_set = DatabaseConnection.exec_params(my_query, [])
     #the database connection method? connects to the database and runs the inserted string as an SQL query through psql
 
-    artists = [] #an empty array that should contain all our data
+    artists = [] #an initially empty array that should later contain all our data
     
     result_set.each do |record|
       #result_set gives an array of hashes, so for each record i.e. HASH in the result set 

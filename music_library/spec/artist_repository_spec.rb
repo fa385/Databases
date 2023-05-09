@@ -1,4 +1,3 @@
-
 require 'artist_repository'
 #require is used to slect what ruby file the rspec should us
 # i.e. run the tests on, and should be in quotation msrks
@@ -28,3 +27,7 @@ RSpec.describe ArtistRepository do
     expect(artists.first.name).to eq('Pixies')
   end
 end
+
+#expect(albums.first.title).to eq('Bossanova')
+#expect(albums.first.release_year).to eq('1999')
+#expect(albums.first.artist_id).to eq('1')

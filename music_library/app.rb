@@ -1,5 +1,5 @@
-require_relative '../lib/database_connection'
-require_relative '../lib/artist_repository'
+require_relative './lib/database_connection'
+require_relative './lib/artist_repository'
 
 DatabaseConnection.connect('music_library') #use the name of the database for the project
 #calling a special kind of method, a class method
