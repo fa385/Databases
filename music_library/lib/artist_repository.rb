@@ -1,6 +1,7 @@
 #need to require the model class so the method defined below makes sense
-require 'artist'
-require 'database_connection'
+require_relative 'artist' # I of my own accord chnaged this from require to require reltive, I need to understand the difference between these.
+# It does make sense that this is rewuired, but I do not understand why database connection is not required
+#require 'database_connection'
 
 
 class ArtistRepository

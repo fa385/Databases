@@ -1,5 +1,8 @@
-require_relative './lib/database_connection'
-require_relative './lib/artist_repository'
+
+require_relative 'lib/database_connection'
+require_relative 'lib/artist_repository'
+require_relative 'lib/album_repository'
+
 
 DatabaseConnection.connect('music_library') #use the name of the database for the project
 #calling a special kind of method, a class method
@@ -13,4 +16,11 @@ DatabaseConnection.connect('music_library') #use the name of the database for th
 
 artist_repository = ArtistRepository.new
 
-p artist_repository.all
+artist_repository.all.each do |artist|
+  p artist
+end
+
+album_repository = AlbumRepository.new
+album_repository.all.each do |album|
+  p album
+end

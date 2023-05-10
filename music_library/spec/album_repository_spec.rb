@@ -20,7 +20,7 @@ RSpec.describe AlbumRepository do
 
     repo = AlbumRepository.new
 
-    artists = repo.all
+    albums = repo.all
 
     expect(albums.first.title).to eq('Bossanova')
     expect(albums.first.release_year).to eq('1999')

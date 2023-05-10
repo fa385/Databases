@@ -1,6 +1,6 @@
-#need to require the model class so the method defined below makes sense
-require 'album'
-require 'database_connection'
+
+require_relative 'album' #need to require the model class so the method defined below makes sense
+#require 'database_connection' 
 
 
 class AlbumRepository
@@ -17,8 +17,9 @@ class AlbumRepository
       #and then we assign what the different properties of that object to the different values in the HASH
       album = Album.new
       album.id = record['id']
-      album.name = record['name']
-      album.genre = record['genre']
+      album.title = record['title']
+      album.release_year = record['release_year']
+      album.artist_id = record['artist_id']
       
       albums << album
       #although the value of the 'album' will always be replaced by the next,
@@ -28,3 +29,4 @@ class AlbumRepository
     return albums
   end
 end
+
