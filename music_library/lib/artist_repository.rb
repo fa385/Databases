@@ -3,7 +3,6 @@ require_relative 'artist' # I of my own accord chnaged this from require to requ
 # It does make sense that this is rewuired, but I do not understand why database connection is not required
 #require 'database_connection'
 
-
 class ArtistRepository
   def all
     my_query = 'SELECT id, name, genre FROM artists;'
